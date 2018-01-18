@@ -9,7 +9,7 @@ public class GameManager {
     private Player currentP;
     private Printer printer;
 
-    public GameManager(int size_, BoardManager board_) {
+    public GameManager(BoardManager board_) {
         board = board_;
         printer = new ConsolePrinter();
         white = new ConsolePlayer(Checker.White);
