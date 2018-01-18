@@ -31,42 +31,7 @@ public class GameManager {
     }
 
     public void StartGame() {
-        //        Player currentPlayer = white;
-//        Player nextPlayer = black;
-//        Player tmpP;
-//
-//        while (true) {
-//            board.FindAllAvailable(currentPlayer.GetColor());
-//            printer.PrintBoard(board.GetBoard());
-//            printer.PrintTurnOf(currentPlayer.GetColor());
-//            if (!board.CheckPlayerAvailable(currentPlayer.GetColor())) {
-//                if (board.CheckIfGameEnded()) {
-//                    Checker winner = board.ReturnWinner();
-//                    if (winner == Checker.Nothing) {
-//                        printer.PrintMessage("It's a tie!");
-//                    } else {
-//                        printer.PrintWinnerMessage(winner);
-//                    }
-//                    break;
-//                }
-//                printer.PrintMessage("No available move");
-//                printer.PrintMessage("Turn go to next player");
-//                tmpP = currentPlayer;
-//                currentPlayer = nextPlayer;
-//                nextPlayer = tmpP;
-//                continue;
-//            }
-//            printer.PrintAvilable(board.GetBoard(), CheckerHelper.GetAvailableChecker(currentPlayer.GetColor()));
-//            printer.PrintMessage("Please enter location to put disc (format: \"row colum\"): ");
-//            Point tmp = currentPlayer.GetPointFromPlayer();
-//            while (!board.DoTurn(tmp.getRow(), tmp.getCol(), currentPlayer.GetColor())) {
-//                printer.PrintMessage("You entered incorrect location...");
-//                tmp = currentPlayer.GetPointFromPlayer();
-//            }
-//            tmpP = currentPlayer;
-//            currentPlayer = nextPlayer;
-//            nextPlayer = tmpP;
-//        }
+        
         board.FindAllAvailable(currentP.GetColor());
         printer.PrintBoard(board.GetBoard());
         printer.PrintTurnOf(currentP.GetColor());
