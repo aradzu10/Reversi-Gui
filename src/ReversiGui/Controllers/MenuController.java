@@ -9,12 +9,16 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
-public class MenuController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class MenuController implements Initializable {
 
     @FXML
     private VBox window;
@@ -32,8 +36,8 @@ public class MenuController {
     private ClickNotifier clickNotifier;
     private GuiPrinter guiPrinter;
 
-    @FXML
-    public void initialize() {
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
         settings = SettingParser.GetSettingsFromFile();
 
         updatedSettings = settings;
@@ -137,7 +141,7 @@ public class MenuController {
     public void display(Stage primaryStage) {
         VBox root;
         try {
-            root = FXMLLoader.load(getClass().getResource("Fxml/Menu.fxml"));
+            root = FXMLLoader.load(getClass().getResource("../Fxml/Menu.fxml"));
         } catch (Exception e) {
             return;
         }

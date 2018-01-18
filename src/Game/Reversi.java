@@ -6,9 +6,9 @@ public class Reversi {
 	private BoardManager board;
 
 	public Reversi(int size) {
-		ChangeSettings();
 		board = new BoardManager(size);
-		game = new GameManager(size, board);
+		game = new GameManager(board);
+		ChangeSettings();
 	}
 
 	private void ChangeSettings() {
