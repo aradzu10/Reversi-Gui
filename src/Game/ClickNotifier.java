@@ -5,7 +5,7 @@ public class ClickNotifier {
     private GameManager gameManager;
 
     public ClickNotifier() {
-
+        gameManager = null;
     }
 
     public ClickNotifier(GameManager gameManager) {
