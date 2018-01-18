@@ -1,6 +1,6 @@
 package Game;
 
-public class RegularRules implements AvailableFinder {
+public class RegularRules implements GameRule {
 
     public void FindAllAvailable(Checker[][] board, int board_size, Checker color) {
         DeleteAllAvailable(board, board_size);
