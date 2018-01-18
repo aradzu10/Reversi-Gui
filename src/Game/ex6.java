@@ -1,7 +1,7 @@
 package Game;
 
 
-import ReversiGui.MenuController;
+import ReversiGui.Controllers.MenuController;
 import javafx.application.Application;
 import javafx.stage.Stage;
 

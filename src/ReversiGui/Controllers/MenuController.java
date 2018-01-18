@@ -1,6 +1,10 @@
-package ReversiGui;
+package ReversiGui.Controllers;
 
 import Game.*;
+import ReversiGui.GuiPrinter;
+import ReversiGui.SettingParser;
+import ReversiGui.Settings;
+import ReversiGui.Tile;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
@@ -133,7 +137,7 @@ public class MenuController {
     public void display(Stage primaryStage) {
         VBox root;
         try {
-            root = FXMLLoader.load(getClass().getResource("Menu.fxml"));
+            root = FXMLLoader.load(getClass().getResource("Fxml/Menu.fxml"));
         } catch (Exception e) {
             return;
         }

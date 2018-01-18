@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 
 <VBox fx:id="window" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8"
-      xmlns:fx="http://javafx.com/fxml/1" fx:controller="ReversiGui.MenuController">
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="ReversiGui.Controllers.MenuController">
   <children>
     <MenuBar fx:id="myMenuBar" prefHeight="25.0" prefWidth="640.0" VBox.vgrow="NEVER">
       <menus>

@@ -1,4 +1,0 @@
-size:8
-player1:0 0 0 1
-player2:0 0 0 1
-
