@@ -5,6 +5,7 @@ import ReversiGui.Settings;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -15,10 +16,12 @@ import javafx.scene.paint.Color;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
+import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.ResourceBundle;
 
-public class SettingsController {
+public class SettingsController implements Initializable {
 
     @FXML
     private Slider boardSize;
@@ -37,8 +40,8 @@ public class SettingsController {
     private static Map<String, Color> colorMap;
     private static Map<Color, String> colorNameMap;
 
-    @FXML
-    public void initialize() {
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
         colorMap = new HashMap<>();
         colorMap.put("White", Color.WHITE);
         colorMap.put("Black", Color.BLACK);
@@ -73,7 +76,6 @@ public class SettingsController {
         P1.relocate(55, 130);
         P2.relocate(190, 130);
         screen.getChildren().addAll(P1, P2);
-
     }
 
     public void saveSettings(ActionEvent event) {
@@ -104,7 +106,7 @@ public class SettingsController {
         settings = currentSettings;
         Parent root;
         try {
-            root = FXMLLoader.load(getClass().getResource("Fxml/Settings.fxml"));
+            root = FXMLLoader.load(getClass().getResource("../Fxml/Settings.fxml"));
         } catch (Exception e) {
             return;
         }
