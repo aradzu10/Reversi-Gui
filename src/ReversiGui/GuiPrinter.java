@@ -2,19 +2,17 @@ package ReversiGui;
 
 import Game.Checker;
 import Game.ClickNotifier;
-import Game.Graphic;
+import Game.Printer;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
-import javafx.stage.Stage;
 
 import static ReversiGui.Tile.DEFAULT_SIZE;
 
 
-public class GuiPrinter implements Graphic {
+public class GuiPrinter implements Printer {
 
     private GridPane boardPane;
     private GridPane messagesPane;

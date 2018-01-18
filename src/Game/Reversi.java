@@ -18,7 +18,7 @@ public class Reversi {
 		return game;
 	}
 
-	public void SetPrinter(Graphic printer) {
+	public void SetPrinter(Printer printer) {
 		game.SetPrinter(printer);
 	}
 

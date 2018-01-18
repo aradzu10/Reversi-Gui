@@ -1,9 +1,6 @@
 package Game;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-
-public class ConsolePrinter implements Graphic {
+public class ConsolePrinter implements Printer {
 
     @Override
     public void PrintTurnOf(Checker player) {

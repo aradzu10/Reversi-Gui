@@ -7,7 +7,7 @@ public class GameManager {
     private Player white;
     private Player black;
     private Player currentP;
-    private Graphic printer;
+    private Printer printer;
 
     public GameManager(int size_, BoardManager board_) {
         board = board_;
@@ -17,7 +17,7 @@ public class GameManager {
         currentP = white;
     }
 
-    public void SetPrinter(Graphic printer_) {
+    public void SetPrinter(Printer printer_) {
         printer = printer_;
     }
 
