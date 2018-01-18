@@ -5,7 +5,7 @@ public class BoardManager {
 
     private int board_size;
     private Checker[][] board;
-    private GameRule finder;
+    private GameRules finder;
     private int scoreWhite;
     private int scoreBlack;
 
@@ -31,7 +31,7 @@ public class BoardManager {
         scoreBlack = 2;
     }
 
-    public void SetRule(GameRule finder_) {
+    public void SetRule(GameRules finder_) {
         finder = finder_;
     }
 

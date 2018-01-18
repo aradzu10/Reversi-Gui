@@ -1,5 +1,5 @@
 package Game;
 
-public interface GameRule {
+public interface GameRules {
     void FindAllAvailable(Checker[][] board, int board_size, Checker color);
 }
