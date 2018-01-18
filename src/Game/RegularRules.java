@@ -31,7 +31,7 @@ public class RegularRules implements GameRule {
                     continue;
                 }
                 if (CheckIfAvailable(board, board_size, r, c, available) == true) {
-                        board[r][c] = CheckerHelper.GetAvailableChecker(available);
+                        board[r][c] = Checker.GetAvailableChecker(available);
                         check = true;
                 }
             }
@@ -81,7 +81,7 @@ public class RegularRules implements GameRule {
     }
 
     private boolean CheckByDirection(Checker[][] board, int row, int col, Checker to_put, Point d, int limit) {
-        Checker to_turn_around = CheckerHelper.GetOppositeChecker(to_put);
+        Checker to_turn_around = Checker.GetOppositeChecker(to_put);
         int r = row + d.getRow();
         int c = col + d.getCol();
         boolean found_checker = false;

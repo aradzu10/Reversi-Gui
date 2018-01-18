@@ -61,7 +61,7 @@ public class BoardManager {
 
     public boolean DoTurn(int row, int col, Checker to_put) {
         int limit;
-        Checker check_available = CheckerHelper.GetAvailableChecker(to_put);
+        Checker check_available = Checker.GetAvailableChecker(to_put);
 
         if (!IsAvailable(row, col, check_available)) {
             return false;
@@ -100,7 +100,7 @@ public class BoardManager {
 
     private void FlipByDirection(int row, int col, Checker to_put, Point d, int limit) {
 
-        Checker to_turn_around = CheckerHelper.GetOppositeChecker(to_put);
+        Checker to_turn_around = Checker.GetOppositeChecker(to_put);
         int r = row + d.getRow(); int c = col + d.getCol();
         boolean found_checker = false;
         for (int i = 0; i < limit; i++) {
@@ -122,7 +122,7 @@ public class BoardManager {
     }
 
     public boolean CheckPlayerAvailable(Checker color) {
-        Checker available = CheckerHelper.GetAvailableChecker(color);
+        Checker available = Checker.GetAvailableChecker(color);
 
         for (int r = 0; r < board_size; r++) {
             for (int c = 0; c < board_size; c++) {
