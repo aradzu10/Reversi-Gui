@@ -1,8 +1,5 @@
 package Game;
-/*
-Name: Arad Zulti
-ID: 315240564
-*/
+
 
 public class GameManager {
 
@@ -31,7 +28,7 @@ public class GameManager {
     }
 
     public void StartGame() {
-        
+
         board.FindAllAvailable(currentP.GetColor());
         printer.PrintBoard(board.GetBoard());
         printer.PrintTurnOf(currentP.GetColor());

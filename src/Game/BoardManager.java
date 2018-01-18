@@ -1,8 +1,4 @@
 package Game;
-/*
-	Name: Arad Zulti
-	ID: 315240564
-*/
 
 
 public class BoardManager {

@@ -1,7 +1,4 @@
-package Game;/*
-Name: Arad Zulti
-ID: 315240564
-*/
+package Game;
 
 public class Point {
 
